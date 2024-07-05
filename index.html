@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaan Demirel - C. Security & Coding</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaan Demirel - C. Security & Coding</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="profile-pic">
-            <img src="images/photo.png" alt="Kaan Demirel">
-        </div>
-        <div class="content">
-            <h1>Hi, I'm Kaan Demirel</h1>
-            <h2>C. Security & Coding</h2>
-            <p>A graduate of Information Security Technologies with an interest in cybersecurity and software development. Also knowledgeable in areas such as Computer Networks, Systems, Virtualization, and Programming.</p>
-            <div class="social-links">
-                <a href="#"><img src="images/discord.svg" alt="Discord"></a>
-                <a href="#"><img src="images/github.svg" alt="GitHub"></a>
-                <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-            </div>
-            <button class="download-cv">Download CV</button>
-        </div>
+  <div class="container">
+    <div class="profile-pic">
+      <img src="images/photo.png" alt="Kaan Demirel">
     </div>
+    <div class="content">
+      <h1>Hi, I'm Kaan Demirel</h1>
+      <h2>C. Security & Coding</h2>
+      <p>A graduate of Information Security Technologies with an interest in cybersecurity and software development.
+        Also knowledgeable in areas such as Computer Networks, Systems, Virtualization, and Programming.</p>
+      <div class="social-links">
+        <a href="#"><img src="images/discord.svg" alt="Discord"></a>
+        <a href="#"><img src="images/github.svg" alt="GitHub"></a>
+        <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+      <button class="download-cv" onclick="showPopup()">Download CV</button>
+    </div>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <p>For CV requests, please contact via <a href="mailto:aethroxx@gmail.com">email</a>. 🙂</p>
+      <button class="ok-button" onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+  <script>
+    function showPopup() {
+      var popup = document.getElementById('popup');
+      popup.style.display = 'flex';
+    }
+
+    function closePopup() {
+      var popup = document.getElementById('popup');
+      popup.style.display = 'none';
+    }
+  </script>
 </body>
+
 </html>
