@@ -2,22 +2,29 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   </head>
   <body>
-    <header>
+    <header class="bg-primary text-white text-center py-5">
       <h1>My Portfolio</h1>
     </header>
     
-    <main>
+    <main class="container my-5">
       <section>
         <h2>About Me</h2>
-        <img src="profile-photo.jpg" alt="Profile Photo">
-        <p>Welcome to my portfolio! I am a passionate web developer with experience in HTML, CSS, and JavaScript. I love creating beautiful and functional websites.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="photo.png" alt="Profile Photo" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <p>Welcome to my portfolio! I am a passionate web developer with experience in HTML, CSS, and JavaScript. I love creating beautiful and functional websites.</p>
+          </div>
+        </div>
       </section>
       
       <section>
         <h2>Social Media</h2>
-        <ul>
+        <ul class="list-unstyled">
           <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
           <li><a href="https://www.github.com/">GitHub</a></li>
           <li><a href="https://www.twitter.com/">Twitter</a></li>
@@ -25,8 +32,10 @@
       </section>
     </main>
     
-    <footer>
+    <footer class="bg-light text-center py-3">
       <p>&copy; 2022 My Portfolio. All rights reserved.</p>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
