@@ -58,8 +58,8 @@ p {
 }
 
 .social-links img {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 }
 
 .download-cv {
@@ -175,7 +175,7 @@ p {
   .content {
     text-align: center;
   }
-  
+
   h1 {
     font-size: 1em;
   }
