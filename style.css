@@ -125,3 +125,75 @@ p {
 .ok-button:hover {
   background-color: #0056b3;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .profile-pic {
+    margin-bottom: 20px;
+  }
+
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 0.9em;
+  }
+
+  p {
+    font-size: 0.9em;
+    max-width: 100%;
+  }
+
+  .social-links img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .download-cv {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 0.8em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  .social-links img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .download-cv {
+    padding: 6px 12px;
+  }
+}
